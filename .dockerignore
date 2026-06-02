@@ -1,0 +1,27 @@
+  # Build outputs
+  **/bin
+  **/obj
+  **/out
+
+  # IDE / VCS
+  .git
+  .gitignore
+  .vs
+  .vscode
+  .idea
+  *.user
+
+  # Container files
+  Dockerfile
+  .dockerignore
+  .containerignore
+
+  # Specs and docs
+  specs
+  README.md
+  *.md
+
+  # OS noise
+  .DS_Store
+  Thumbs.db
+

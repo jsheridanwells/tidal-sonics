@@ -11,4 +11,4 @@ var app = builder.Build();
 
 app.MapMcp("/mcp");
 
-app.Run("http://localhost:3001/");
+app.Run();
