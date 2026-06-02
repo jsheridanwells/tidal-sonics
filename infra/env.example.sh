@@ -1,0 +1,12 @@
+export LOCATION=eastus2
+export RG=your-rg-name
+export ACR_NAME=youracrname12345
+export ACR_LOGIN_SERVER=youracrname12345.azurecr.io
+export UAMI_NAME=your-app-id
+export ENV_NAME=your-app-cae
+export APP_NAME=your-app-ca
+export IMAGE_TAG=v1
+export UAMI_ID=/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/your-rg-name/providers/Microsoft.ManagedIdentity/userAssignedIdentities/your-app-id
+export UAMI_PRINCIPAL_ID=00000000-0000-0000-0000-000000000000
+export ACR_ID=/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/your-rg-name/providers/Microsoft.ContainerRegistry/registries/youracrname12345
+export APP_FQDN=your-app-ca.randomhash.eastus2.azurecontainerapps.io

@@ -6,6 +6,10 @@
 # dotenv files
 .env
 
+# local infra secrets — never commit these
+infra/env.sh
+infra/secrets.md
+
 # User-specific files
 *.rsuser
 *.suo

@@ -3,7 +3,7 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(dirname "$SCRIPT_DIR")"
-source "$SCRIPT_DIR/env.sh"
+[[ -f "$SCRIPT_DIR/env.sh" ]] && source "$SCRIPT_DIR/env.sh" || true
 
 if ! az account show --output none 2>/dev/null; then
   echo "Error: not logged in to Azure CLI. Run 'az login' first."
