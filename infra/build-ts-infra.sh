@@ -18,7 +18,11 @@ echo ""
 
 # [1/7] Resource group
 echo "[1/7] Resource group..."
-az group create -n $RG -l $LOCATION --output none
+if az group show -n $RG --output none 2>/dev/null; then
+  echo "  already exists, skipping."
+else
+  az group create -n $RG -l $LOCATION --output none
+fi
 
 # [2/7] ACR
 echo "[2/7] Container registry..."
